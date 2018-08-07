@@ -81,8 +81,34 @@ function lesser(x,y) {
 //
 // If any other language code is used, return nothing.
 
-// 10. Create a function, howOld, that takes a birthdate and a another
+function multigreeting (name, language){
+    if(language === "en"){
+        return "Hello, " + name + "!"
+    } 
+    if(language === "es"){
+        return "¡Hola, " + name + "!"
+    }
+    if(language === "fr"){
+        return "Bonjour, " + name + "!"
+    }
+    if(language === "eo"){
+        return "Saluton, " + name + "!"
+    }
+}
+
+
+// 10. Create a function
+// howOld, that takes a birthdate and a another
 // date (the "current date") and returns how many years old the person
 // with that birthdate was on that date. The dates should be JavaScript
 // Date objects.
 // If the birth date is after than the current date, return nothing.
+
+function howOld(birthDate, currentDate){
+    if(birthDate > currentDate){
+        return
+    }
+    if(currentDate > birthDate){
+        return ()
+    }
+}
